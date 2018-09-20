@@ -91,12 +91,13 @@ namespace BoltFreezer.PlanSpace
             if (!plan.Orderings.HasCycle())
             {
                 var score = Score(plan);
-                if (score > 600)
-                {
-                    Console.WriteLine(score);
-                    // reduce size of frontier
-                    return;
-                }
+                Console.WriteLine(score);
+                //if (score > 600)
+                //{
+                //    Console.WriteLine(score);
+                //    // reduce size of frontier
+                //    return;
+                //}
                 search.Frontier.Enqueue(plan, score);
                 opened++;
             }
@@ -156,7 +157,7 @@ namespace BoltFreezer.PlanSpace
                     continue;
                 }
 
-                if (CacheMaps.IsCndt(oc.precondition, step)){
+                if (step.Effects.Contains(oc.precondition)){
 
                     // Before adding a repair, check if there is a path.
                     if (plan.Orderings.IsPath(oc.step, step))

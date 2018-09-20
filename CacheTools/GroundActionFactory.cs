@@ -34,6 +34,27 @@ namespace BoltFreezer.PlanTools
             GroundActions.Add(newOperator);
         }
 
+        // In case you need to make this separately.
+        public static void CreateTypeDict(Domain domain, Problem problem)
+        {
+            TypeDict = new Dictionary<string, List<string>>();
+            var ops = domain.Operators;
+            var objectHierarchy = EnumerableExtension.HashtableToDictionary<string, List<string>>(domain.objectTypes);
+            var typeToObjectDict = EnumerableExtension.HashtableToDictionary<string, List<string>>(problem.ObjectsByType);
+
+            foreach (var keyvalue in typeToObjectDict)
+            {
+                TypeDict[keyvalue.Key] = keyvalue.Value;
+            }
+            // Foreach object key that isn't a typedict key
+            var excludedObjectKeys = objectHierarchy.Keys.Where(okey => !typeToObjectDict.ContainsKey(okey));
+            foreach (var okey in excludedObjectKeys)
+            {
+                var newValues = typeToObjectDict.Keys.Where(tkey => objectHierarchy[okey].Contains(tkey)).Select(tkey => typeToObjectDict[tkey]);
+                TypeDict[okey] = newValues.SelectMany(x => x).ToList();
+            }
+        }
+
         public static void PopulateGroundActions(Domain domain, Problem problem)
         {
             GroundActions = new List<IOperator>();
@@ -95,6 +116,47 @@ namespace BoltFreezer.PlanTools
 
                 InsertOperator(groundOperator as IOperator);
             }
+        }
+
+        public static List<IOperator> FromOperatorWithReturn(IOperator op)
+        {
+            var listToReturn = new List<IOperator>();
+            var permList = new List<List<string>>();
+            foreach (Term variable in op.Terms)
+            {
+                permList.Add(TypeDict[variable.Type] as List<string>);
+            }
+
+            foreach (var combination in EnumerableExtension.GenerateCombinations(permList))
+            {
+                // Add bindings
+                var opClone = op.Clone() as Operator;
+                var termStringList = from term in opClone.Terms select term.Variable;
+                var constantStringList = combination;
+
+                opClone.AddBindings(termStringList.ToList(), constantStringList.ToList());
+
+                if (!opClone.NonEqualTermsAreNonequal())
+                    continue;
+
+                //Debug.Log("operator: " + opClone.ToString());
+
+                // this ensures that this ground operator has a unique ID
+                var groundOperator = new Operator(opClone.Name, opClone.Terms, opClone.Bindings, opClone.Preconditions, opClone.Effects);
+
+                if (GroundActionFactory.GroundActions.Contains(groundOperator))
+                {
+                    continue;
+                }
+
+                if (GroundLibrary.ContainsKey(groundOperator.ID))
+                    throw new System.Exception();
+
+                InsertOperator(groundOperator as IOperator);
+                listToReturn.Add(groundOperator as IOperator);
+            }
+
+            return listToReturn;
         }
 
         private static void FromOperators(List<IOperator> operators)

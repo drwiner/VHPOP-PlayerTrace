@@ -113,7 +113,7 @@ namespace BoltFreezer.FileIO
             foreach (string line in input)
             {
 				string line_raw_lower = line.ToLower();
-				if (line.Contains(";"){
+				if (line.Contains(";")){
 					continue;
 				}
 				
@@ -733,7 +733,7 @@ namespace BoltFreezer.FileIO
             }
 
             // Create a working copy of the domain file.
-            Writer.DomainToPDDL(Parser.GetTopDirectory() + @"Benchmarks\" + domain.Name.ToLower() + @"\domrob.pddl", domain);
+            Writer.DomainToPDDL(Parser.path + @"\domrob.pddl", domain);
 
             return domain;
         }

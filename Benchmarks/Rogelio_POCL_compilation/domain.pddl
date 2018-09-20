@@ -3,8 +3,7 @@
    (:types location entity prefab - object
            actant portal - entity
            door entrance - portal
-           character item - actant
-   )
+           character item - actant)
    (:predicates
 
         ;; ---- Space ----
@@ -175,12 +174,12 @@
         :parameters (?character - character ?from - location ?to - location)
         :precondition
             (and
+				(not (= ?from ?to))
                 (player ?character)
                 (at ?character ?from)
                 (not (at ?character ?to))
                 (connected ?from ?to)
                 (doorway ?from ?to)
-                (not (= ?from ?to))
             )
         :effect
             (and
@@ -195,10 +194,10 @@
         :parameters (?character - character ?from - location ?door - door ?to - location)
         :precondition
             (and
+				(not (= ?from ?to))
                 (player ?character)
                 (at ?character ?from)
                 (not (at ?character ?to))
-                (not (= ?from ?to))
                 (connected ?from ?to)
                 (doorbetween ?door ?from ?to)
                 (not (locked ?door))
@@ -216,10 +215,10 @@
         :parameters (?character - character ?from - location ?entrance - entrance ?to - location)
         :precondition
             (and
+				(not (= ?from ?to))
                 (player ?character)
                 (at ?character ?from)
                 (not (at ?character ?to))
-                (not (= ?from ?to))
                 (at ?entrance ?from)
                 (leadsto ?entrance ?to)
                 (not (closed ?entrance))

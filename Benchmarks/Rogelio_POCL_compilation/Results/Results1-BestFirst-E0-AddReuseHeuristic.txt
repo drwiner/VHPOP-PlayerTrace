@@ -1,0 +1,657 @@
+problem	1
+selection	E0-AddReuseHeuristic
+search	BestFirst
+runtime	27
+opened	1
+expanded	1
+primitives	161
+
+
+(talk-to arthur mel storage)-1
+(pickup arthur basementbucket storage)-3
+(drop arthur basementbucket storage)-5
+(donothing arthur)-7
+(pickup arthur basementbucket storage)-9
+(give arthur basementbucket mel storage)-11
+(donothing arthur)-13
+(give mel basementexitkey arthur storage)-15
+(move-through-doorway arthur storage basement)-17
+(donothing arthur)-19
+(unlock-entrance arthur basementexitkey basementexit basement)-21
+(open arthur basementexit basement)-23
+(move-through-entrance arthur basement basementexit bar)-25
+(donothing arthur)-27
+(close arthur basemententrance bar)-29
+(donothing arthur)-31
+(pickup arthur shinykey bar)-33
+(talk-to arthur oscar bar)-35
+(open arthur barexit bar)-37
+(move-through-entrance arthur bar barexit docks)-39
+(pickup arthur mushroom docks)-41
+(move-through-doorway arthur docks junkyard)-43
+(talk-to arthur alli junkyard)-45
+(donothing arthur)-47
+(pickup arthur mirror junkyard)-49
+(move-through-doorway arthur junkyard docks)-51
+(move-through-doorway arthur docks townarch)-53
+(talk-to arthur dorian townarch)-55
+(donothing arthur)-57
+(give dorian loveletter arthur townarch)-59
+(talk-to arthur karina townarch)-61
+(open arthur forgeentrance townarch)-63
+(move-through-entrance arthur townarch forgeentrance forge)-65
+(talk-to arthur matthias forge)-67
+(talk-to arthur peter forge)-69
+(move-through-entrance arthur forge forgeexit townarch)-71
+(move-through-door arthur townarch towngate townsquare)-73
+(talk-to arthur frank townsquare)-75
+(unlock-entrance arthur shinykey bankentrance townsquare)-77
+(open arthur bankentrance townsquare)-79
+(move-through-entrance arthur townsquare bankentrance bank)-81
+(pickup arthur coin bank)-83
+(pickup arthur silver bank)-85
+(move-through-entrance arthur bank bankexit townsquare)-87
+(move-through-doorway arthur townsquare valley)-89
+(open arthur fortentrance valley)-91
+(move-through-entrance arthur valley fortentrance fort)-93
+(talk-to arthur camille fort)-95
+(pickup arthur bucket fort)-97
+(talk-to arthur phillip fort)-99
+(talk-to arthur ian fort)-101
+(donothing arthur)-103
+(talk-to arthur camille fort)-105
+(move-through-entrance arthur fort fortexit valley)-107
+(talk-to arthur james valley)-109
+(donothing arthur)-111
+(give arthur coin james valley)-113
+(donothing arthur)-115
+(move-through-doorway arthur valley townsquare)-117
+(move-through-doorway arthur townsquare cliff)-119
+(pickup arthur bouquet cliff)-121
+(open arthur mansionentrance cliff)-123
+(move-through-entrance arthur cliff mansionentrance mansion)-125
+(talk-to arthur avery mansion)-127
+(talk-to arthur roger mansion)-129
+(talk-to arthur jordan mansion)-131
+(talk-to arthur jordan mansion)-133
+(give arthur loveletter jordan mansion)-135
+(donothing arthur)-137
+(move-through-entrance arthur mansion mansionexit cliff)-139
+(pickup arthur humanskull cliff)-141
+(move-through-doorway arthur cliff townsquare)-143
+(move-through-door arthur townsquare towngate townarch)-145
+(move-through-doorway arthur townarch docks)-147
+(move-through-doorway arthur docks junkyard)-149
+(talk-to arthur alli junkyard)-151
+(move-through-doorway arthur junkyard docks)-153
+(move-through-doorway arthur docks townarch)-155
+(open arthur hutentrance townarch)-157
+(move-through-entrance arthur townarch hutentrance hut)-159
+(talk-to arthur michael hut)-161
+(pickup arthur tastycupcake hut)-163
+(move-through-entrance arthur hut hutexit townarch)-165
+(move-through-doorway arthur townarch docks)-167
+(move-through-doorway arthur docks junkyard)-169
+(give arthur tastycupcake alli junkyard)-171
+(donothing arthur)-173
+(give alli ash arthur junkyard)-175
+(move-through-doorway arthur junkyard docks)-177
+(move-through-doorway arthur docks townarch)-179
+(move-through-door arthur townarch towngate townsquare)-181
+(move-through-doorway arthur townsquare valley)-183
+(talk-to arthur james valley)-185
+(give arthur humanskull james valley)-187
+(donothing arthur)-189
+(move-through-doorway arthur valley townsquare)-191
+(move-through-doorway arthur townsquare cliff)-193
+(move-through-entrance arthur cliff mansionentrance mansion)-195
+(pickup arthur candle mansion)-197
+(move-through-entrance arthur mansion mansionexit cliff)-199
+(move-through-doorway arthur cliff townsquare)-201
+(drop arthur mirror townsquare)-203
+(drop arthur silver townsquare)-205
+(drop arthur mushroom townsquare)-207
+(move-through-doorway arthur townsquare valley)-209
+(give arthur candle james valley)-211
+(move-through-doorway arthur valley townsquare)-213
+(talk-to arthur frank townsquare)-215
+(talk-to arthur dave townsquare)-217
+(open arthur shopentrance townsquare)-219
+(move-through-entrance arthur townsquare shopentrance shop)-221
+(talk-to arthur giovanna shop)-223
+(donothing arthur)-225
+(pickup arthur knightshield shop)-227
+(move-through-entrance arthur shop shopexit townsquare)-229
+(move-through-door arthur townsquare towngate townarch)-231
+(move-through-entrance arthur townarch forgeentrance forge)-233
+(pickup arthur knightsword forge)-235
+(move-through-entrance arthur forge forgeexit townarch)-237
+(move-through-entrance arthur townarch hutentrance hut)-239
+(pickup arthur hairtonic hut)-241
+(move-through-entrance arthur hut hutexit townarch)-243
+(close arthur hutentrance townarch)-245
+(move-through-door arthur townarch towngate townsquare)-247
+(move-through-entrance arthur townsquare shopentrance shop)-249
+(give arthur hairtonic giovanna shop)-251
+(move-through-entrance arthur shop shopexit townsquare)-253
+(move-through-doorway arthur townsquare valley)-255
+(move-through-entrance arthur valley fortentrance fort)-257
+(talk-to arthur ian fort)-259
+(give arthur knightsword ian fort)-261
+(give arthur knightshield ian fort)-263
+(move-through-entrance arthur fort fortexit valley)-265
+(move-through-doorway arthur valley townsquare)-267
+(move-through-entrance arthur townsquare bankentrance bank)-269
+(drop arthur bucket bank)-271
+(move-through-entrance arthur bank bankexit townsquare)-273
+(move-through-door arthur townsquare towngate townarch)-275
+(move-through-entrance arthur townarch forgeentrance forge)-277
+(move-through-entrance arthur forge forgeexit townarch)-279
+(move-through-doorway arthur townarch docks)-281
+(move-through-entrance arthur docks barentrance bar)-283
+(move-through-entrance arthur bar barexit docks)-285
+(move-through-doorway arthur docks junkyard)-287
+(talk-to arthur alli junkyard)-289
+(move-through-doorway arthur junkyard docks)-291
+(move-through-doorway arthur docks townarch)-293
+(give arthur bouquet dorian townarch)-295
+(donothing arthur)-297
+(give dorian lovecontract arthur townarch)-299
+(move-through-door arthur townarch towngate townsquare)-301
+(move-through-doorway arthur townsquare cliff)-303
+(move-through-entrance arthur cliff mansionentrance mansion)-305
+(give arthur lovecontract jordan mansion)-307
+(talk-to arthur jordan mansion)-309
+(move-through-entrance arthur mansion mansionexit cliff)-311
+(move-through-doorway arthur cliff townsquare)-313
+(move-through-door arthur townsquare towngate townarch)-315
+(move-through-doorway arthur townarch docks)-317
+(move-through-entrance arthur docks barentrance bar)-319
+(talk-to arthur mel bar)-321
+
+
+Orderings:
+
+((initial)-322, (goal)-323)
+((initial)-322, (talk-to arthur mel storage)-1)
+((talk-to arthur mel storage)-1, (goal)-323)
+((initial)-322, (pickup arthur basementbucket storage)-3)
+((pickup arthur basementbucket storage)-3, (goal)-323)
+((talk-to arthur mel storage)-1, (pickup arthur basementbucket storage)-3)
+((initial)-322, (drop arthur basementbucket storage)-5)
+((drop arthur basementbucket storage)-5, (goal)-323)
+((pickup arthur basementbucket storage)-3, (drop arthur basementbucket storage)-5)
+((initial)-322, (donothing arthur)-7)
+((donothing arthur)-7, (goal)-323)
+((drop arthur basementbucket storage)-5, (donothing arthur)-7)
+((initial)-322, (pickup arthur basementbucket storage)-9)
+((pickup arthur basementbucket storage)-9, (goal)-323)
+((donothing arthur)-7, (pickup arthur basementbucket storage)-9)
+((initial)-322, (give arthur basementbucket mel storage)-11)
+((give arthur basementbucket mel storage)-11, (goal)-323)
+((pickup arthur basementbucket storage)-9, (give arthur basementbucket mel storage)-11)
+((initial)-322, (donothing arthur)-13)
+((donothing arthur)-13, (goal)-323)
+((give arthur basementbucket mel storage)-11, (donothing arthur)-13)
+((initial)-322, (give mel basementexitkey arthur storage)-15)
+((give mel basementexitkey arthur storage)-15, (goal)-323)
+((donothing arthur)-13, (give mel basementexitkey arthur storage)-15)
+((initial)-322, (move-through-doorway arthur storage basement)-17)
+((move-through-doorway arthur storage basement)-17, (goal)-323)
+((give mel basementexitkey arthur storage)-15, (move-through-doorway arthur storage basement)-17)
+((initial)-322, (donothing arthur)-19)
+((donothing arthur)-19, (goal)-323)
+((move-through-doorway arthur storage basement)-17, (donothing arthur)-19)
+((initial)-322, (unlock-entrance arthur basementexitkey basementexit basement)-21)
+((unlock-entrance arthur basementexitkey basementexit basement)-21, (goal)-323)
+((donothing arthur)-19, (unlock-entrance arthur basementexitkey basementexit basement)-21)
+((initial)-322, (open arthur basementexit basement)-23)
+((open arthur basementexit basement)-23, (goal)-323)
+((unlock-entrance arthur basementexitkey basementexit basement)-21, (open arthur basementexit basement)-23)
+((initial)-322, (move-through-entrance arthur basement basementexit bar)-25)
+((move-through-entrance arthur basement basementexit bar)-25, (goal)-323)
+((open arthur basementexit basement)-23, (move-through-entrance arthur basement basementexit bar)-25)
+((initial)-322, (donothing arthur)-27)
+((donothing arthur)-27, (goal)-323)
+((move-through-entrance arthur basement basementexit bar)-25, (donothing arthur)-27)
+((initial)-322, (close arthur basemententrance bar)-29)
+((close arthur basemententrance bar)-29, (goal)-323)
+((donothing arthur)-27, (close arthur basemententrance bar)-29)
+((initial)-322, (donothing arthur)-31)
+((donothing arthur)-31, (goal)-323)
+((close arthur basemententrance bar)-29, (donothing arthur)-31)
+((initial)-322, (pickup arthur shinykey bar)-33)
+((pickup arthur shinykey bar)-33, (goal)-323)
+((donothing arthur)-31, (pickup arthur shinykey bar)-33)
+((initial)-322, (talk-to arthur oscar bar)-35)
+((talk-to arthur oscar bar)-35, (goal)-323)
+((pickup arthur shinykey bar)-33, (talk-to arthur oscar bar)-35)
+((initial)-322, (open arthur barexit bar)-37)
+((open arthur barexit bar)-37, (goal)-323)
+((talk-to arthur oscar bar)-35, (open arthur barexit bar)-37)
+((initial)-322, (move-through-entrance arthur bar barexit docks)-39)
+((move-through-entrance arthur bar barexit docks)-39, (goal)-323)
+((open arthur barexit bar)-37, (move-through-entrance arthur bar barexit docks)-39)
+((initial)-322, (pickup arthur mushroom docks)-41)
+((pickup arthur mushroom docks)-41, (goal)-323)
+((move-through-entrance arthur bar barexit docks)-39, (pickup arthur mushroom docks)-41)
+((initial)-322, (move-through-doorway arthur docks junkyard)-43)
+((move-through-doorway arthur docks junkyard)-43, (goal)-323)
+((pickup arthur mushroom docks)-41, (move-through-doorway arthur docks junkyard)-43)
+((initial)-322, (talk-to arthur alli junkyard)-45)
+((talk-to arthur alli junkyard)-45, (goal)-323)
+((move-through-doorway arthur docks junkyard)-43, (talk-to arthur alli junkyard)-45)
+((initial)-322, (donothing arthur)-47)
+((donothing arthur)-47, (goal)-323)
+((talk-to arthur alli junkyard)-45, (donothing arthur)-47)
+((initial)-322, (pickup arthur mirror junkyard)-49)
+((pickup arthur mirror junkyard)-49, (goal)-323)
+((donothing arthur)-47, (pickup arthur mirror junkyard)-49)
+((initial)-322, (move-through-doorway arthur junkyard docks)-51)
+((move-through-doorway arthur junkyard docks)-51, (goal)-323)
+((pickup arthur mirror junkyard)-49, (move-through-doorway arthur junkyard docks)-51)
+((initial)-322, (move-through-doorway arthur docks townarch)-53)
+((move-through-doorway arthur docks townarch)-53, (goal)-323)
+((move-through-doorway arthur junkyard docks)-51, (move-through-doorway arthur docks townarch)-53)
+((initial)-322, (talk-to arthur dorian townarch)-55)
+((talk-to arthur dorian townarch)-55, (goal)-323)
+((move-through-doorway arthur docks townarch)-53, (talk-to arthur dorian townarch)-55)
+((initial)-322, (donothing arthur)-57)
+((donothing arthur)-57, (goal)-323)
+((talk-to arthur dorian townarch)-55, (donothing arthur)-57)
+((initial)-322, (give dorian loveletter arthur townarch)-59)
+((give dorian loveletter arthur townarch)-59, (goal)-323)
+((donothing arthur)-57, (give dorian loveletter arthur townarch)-59)
+((initial)-322, (talk-to arthur karina townarch)-61)
+((talk-to arthur karina townarch)-61, (goal)-323)
+((give dorian loveletter arthur townarch)-59, (talk-to arthur karina townarch)-61)
+((initial)-322, (open arthur forgeentrance townarch)-63)
+((open arthur forgeentrance townarch)-63, (goal)-323)
+((talk-to arthur karina townarch)-61, (open arthur forgeentrance townarch)-63)
+((initial)-322, (move-through-entrance arthur townarch forgeentrance forge)-65)
+((move-through-entrance arthur townarch forgeentrance forge)-65, (goal)-323)
+((open arthur forgeentrance townarch)-63, (move-through-entrance arthur townarch forgeentrance forge)-65)
+((initial)-322, (talk-to arthur matthias forge)-67)
+((talk-to arthur matthias forge)-67, (goal)-323)
+((move-through-entrance arthur townarch forgeentrance forge)-65, (talk-to arthur matthias forge)-67)
+((initial)-322, (talk-to arthur peter forge)-69)
+((talk-to arthur peter forge)-69, (goal)-323)
+((talk-to arthur matthias forge)-67, (talk-to arthur peter forge)-69)
+((initial)-322, (move-through-entrance arthur forge forgeexit townarch)-71)
+((move-through-entrance arthur forge forgeexit townarch)-71, (goal)-323)
+((talk-to arthur peter forge)-69, (move-through-entrance arthur forge forgeexit townarch)-71)
+((initial)-322, (move-through-door arthur townarch towngate townsquare)-73)
+((move-through-door arthur townarch towngate townsquare)-73, (goal)-323)
+((move-through-entrance arthur forge forgeexit townarch)-71, (move-through-door arthur townarch towngate townsquare)-73)
+((initial)-322, (talk-to arthur frank townsquare)-75)
+((talk-to arthur frank townsquare)-75, (goal)-323)
+((move-through-door arthur townarch towngate townsquare)-73, (talk-to arthur frank townsquare)-75)
+((initial)-322, (unlock-entrance arthur shinykey bankentrance townsquare)-77)
+((unlock-entrance arthur shinykey bankentrance townsquare)-77, (goal)-323)
+((talk-to arthur frank townsquare)-75, (unlock-entrance arthur shinykey bankentrance townsquare)-77)
+((initial)-322, (open arthur bankentrance townsquare)-79)
+((open arthur bankentrance townsquare)-79, (goal)-323)
+((unlock-entrance arthur shinykey bankentrance townsquare)-77, (open arthur bankentrance townsquare)-79)
+((initial)-322, (move-through-entrance arthur townsquare bankentrance bank)-81)
+((move-through-entrance arthur townsquare bankentrance bank)-81, (goal)-323)
+((open arthur bankentrance townsquare)-79, (move-through-entrance arthur townsquare bankentrance bank)-81)
+((initial)-322, (pickup arthur coin bank)-83)
+((pickup arthur coin bank)-83, (goal)-323)
+((move-through-entrance arthur townsquare bankentrance bank)-81, (pickup arthur coin bank)-83)
+((initial)-322, (pickup arthur silver bank)-85)
+((pickup arthur silver bank)-85, (goal)-323)
+((pickup arthur coin bank)-83, (pickup arthur silver bank)-85)
+((initial)-322, (move-through-entrance arthur bank bankexit townsquare)-87)
+((move-through-entrance arthur bank bankexit townsquare)-87, (goal)-323)
+((pickup arthur silver bank)-85, (move-through-entrance arthur bank bankexit townsquare)-87)
+((initial)-322, (move-through-doorway arthur townsquare valley)-89)
+((move-through-doorway arthur townsquare valley)-89, (goal)-323)
+((move-through-entrance arthur bank bankexit townsquare)-87, (move-through-doorway arthur townsquare valley)-89)
+((initial)-322, (open arthur fortentrance valley)-91)
+((open arthur fortentrance valley)-91, (goal)-323)
+((move-through-doorway arthur townsquare valley)-89, (open arthur fortentrance valley)-91)
+((initial)-322, (move-through-entrance arthur valley fortentrance fort)-93)
+((move-through-entrance arthur valley fortentrance fort)-93, (goal)-323)
+((open arthur fortentrance valley)-91, (move-through-entrance arthur valley fortentrance fort)-93)
+((initial)-322, (talk-to arthur camille fort)-95)
+((talk-to arthur camille fort)-95, (goal)-323)
+((move-through-entrance arthur valley fortentrance fort)-93, (talk-to arthur camille fort)-95)
+((initial)-322, (pickup arthur bucket fort)-97)
+((pickup arthur bucket fort)-97, (goal)-323)
+((talk-to arthur camille fort)-95, (pickup arthur bucket fort)-97)
+((initial)-322, (talk-to arthur phillip fort)-99)
+((talk-to arthur phillip fort)-99, (goal)-323)
+((pickup arthur bucket fort)-97, (talk-to arthur phillip fort)-99)
+((initial)-322, (talk-to arthur ian fort)-101)
+((talk-to arthur ian fort)-101, (goal)-323)
+((talk-to arthur phillip fort)-99, (talk-to arthur ian fort)-101)
+((initial)-322, (donothing arthur)-103)
+((donothing arthur)-103, (goal)-323)
+((talk-to arthur ian fort)-101, (donothing arthur)-103)
+((initial)-322, (talk-to arthur camille fort)-105)
+((talk-to arthur camille fort)-105, (goal)-323)
+((donothing arthur)-103, (talk-to arthur camille fort)-105)
+((initial)-322, (move-through-entrance arthur fort fortexit valley)-107)
+((move-through-entrance arthur fort fortexit valley)-107, (goal)-323)
+((talk-to arthur camille fort)-105, (move-through-entrance arthur fort fortexit valley)-107)
+((initial)-322, (talk-to arthur james valley)-109)
+((talk-to arthur james valley)-109, (goal)-323)
+((move-through-entrance arthur fort fortexit valley)-107, (talk-to arthur james valley)-109)
+((initial)-322, (donothing arthur)-111)
+((donothing arthur)-111, (goal)-323)
+((talk-to arthur james valley)-109, (donothing arthur)-111)
+((initial)-322, (give arthur coin james valley)-113)
+((give arthur coin james valley)-113, (goal)-323)
+((donothing arthur)-111, (give arthur coin james valley)-113)
+((initial)-322, (donothing arthur)-115)
+((donothing arthur)-115, (goal)-323)
+((give arthur coin james valley)-113, (donothing arthur)-115)
+((initial)-322, (move-through-doorway arthur valley townsquare)-117)
+((move-through-doorway arthur valley townsquare)-117, (goal)-323)
+((donothing arthur)-115, (move-through-doorway arthur valley townsquare)-117)
+((initial)-322, (move-through-doorway arthur townsquare cliff)-119)
+((move-through-doorway arthur townsquare cliff)-119, (goal)-323)
+((move-through-doorway arthur valley townsquare)-117, (move-through-doorway arthur townsquare cliff)-119)
+((initial)-322, (pickup arthur bouquet cliff)-121)
+((pickup arthur bouquet cliff)-121, (goal)-323)
+((move-through-doorway arthur townsquare cliff)-119, (pickup arthur bouquet cliff)-121)
+((initial)-322, (open arthur mansionentrance cliff)-123)
+((open arthur mansionentrance cliff)-123, (goal)-323)
+((pickup arthur bouquet cliff)-121, (open arthur mansionentrance cliff)-123)
+((initial)-322, (move-through-entrance arthur cliff mansionentrance mansion)-125)
+((move-through-entrance arthur cliff mansionentrance mansion)-125, (goal)-323)
+((open arthur mansionentrance cliff)-123, (move-through-entrance arthur cliff mansionentrance mansion)-125)
+((initial)-322, (talk-to arthur avery mansion)-127)
+((talk-to arthur avery mansion)-127, (goal)-323)
+((move-through-entrance arthur cliff mansionentrance mansion)-125, (talk-to arthur avery mansion)-127)
+((initial)-322, (talk-to arthur roger mansion)-129)
+((talk-to arthur roger mansion)-129, (goal)-323)
+((talk-to arthur avery mansion)-127, (talk-to arthur roger mansion)-129)
+((initial)-322, (talk-to arthur jordan mansion)-131)
+((talk-to arthur jordan mansion)-131, (goal)-323)
+((talk-to arthur roger mansion)-129, (talk-to arthur jordan mansion)-131)
+((initial)-322, (talk-to arthur jordan mansion)-133)
+((talk-to arthur jordan mansion)-133, (goal)-323)
+((talk-to arthur jordan mansion)-131, (talk-to arthur jordan mansion)-133)
+((initial)-322, (give arthur loveletter jordan mansion)-135)
+((give arthur loveletter jordan mansion)-135, (goal)-323)
+((talk-to arthur jordan mansion)-133, (give arthur loveletter jordan mansion)-135)
+((initial)-322, (donothing arthur)-137)
+((donothing arthur)-137, (goal)-323)
+((give arthur loveletter jordan mansion)-135, (donothing arthur)-137)
+((initial)-322, (move-through-entrance arthur mansion mansionexit cliff)-139)
+((move-through-entrance arthur mansion mansionexit cliff)-139, (goal)-323)
+((donothing arthur)-137, (move-through-entrance arthur mansion mansionexit cliff)-139)
+((initial)-322, (pickup arthur humanskull cliff)-141)
+((pickup arthur humanskull cliff)-141, (goal)-323)
+((move-through-entrance arthur mansion mansionexit cliff)-139, (pickup arthur humanskull cliff)-141)
+((initial)-322, (move-through-doorway arthur cliff townsquare)-143)
+((move-through-doorway arthur cliff townsquare)-143, (goal)-323)
+((pickup arthur humanskull cliff)-141, (move-through-doorway arthur cliff townsquare)-143)
+((initial)-322, (move-through-door arthur townsquare towngate townarch)-145)
+((move-through-door arthur townsquare towngate townarch)-145, (goal)-323)
+((move-through-doorway arthur cliff townsquare)-143, (move-through-door arthur townsquare towngate townarch)-145)
+((initial)-322, (move-through-doorway arthur townarch docks)-147)
+((move-through-doorway arthur townarch docks)-147, (goal)-323)
+((move-through-door arthur townsquare towngate townarch)-145, (move-through-doorway arthur townarch docks)-147)
+((initial)-322, (move-through-doorway arthur docks junkyard)-149)
+((move-through-doorway arthur docks junkyard)-149, (goal)-323)
+((move-through-doorway arthur townarch docks)-147, (move-through-doorway arthur docks junkyard)-149)
+((initial)-322, (talk-to arthur alli junkyard)-151)
+((talk-to arthur alli junkyard)-151, (goal)-323)
+((move-through-doorway arthur docks junkyard)-149, (talk-to arthur alli junkyard)-151)
+((initial)-322, (move-through-doorway arthur junkyard docks)-153)
+((move-through-doorway arthur junkyard docks)-153, (goal)-323)
+((talk-to arthur alli junkyard)-151, (move-through-doorway arthur junkyard docks)-153)
+((initial)-322, (move-through-doorway arthur docks townarch)-155)
+((move-through-doorway arthur docks townarch)-155, (goal)-323)
+((move-through-doorway arthur junkyard docks)-153, (move-through-doorway arthur docks townarch)-155)
+((initial)-322, (open arthur hutentrance townarch)-157)
+((open arthur hutentrance townarch)-157, (goal)-323)
+((move-through-doorway arthur docks townarch)-155, (open arthur hutentrance townarch)-157)
+((initial)-322, (move-through-entrance arthur townarch hutentrance hut)-159)
+((move-through-entrance arthur townarch hutentrance hut)-159, (goal)-323)
+((open arthur hutentrance townarch)-157, (move-through-entrance arthur townarch hutentrance hut)-159)
+((initial)-322, (talk-to arthur michael hut)-161)
+((talk-to arthur michael hut)-161, (goal)-323)
+((move-through-entrance arthur townarch hutentrance hut)-159, (talk-to arthur michael hut)-161)
+((initial)-322, (pickup arthur tastycupcake hut)-163)
+((pickup arthur tastycupcake hut)-163, (goal)-323)
+((talk-to arthur michael hut)-161, (pickup arthur tastycupcake hut)-163)
+((initial)-322, (move-through-entrance arthur hut hutexit townarch)-165)
+((move-through-entrance arthur hut hutexit townarch)-165, (goal)-323)
+((pickup arthur tastycupcake hut)-163, (move-through-entrance arthur hut hutexit townarch)-165)
+((initial)-322, (move-through-doorway arthur townarch docks)-167)
+((move-through-doorway arthur townarch docks)-167, (goal)-323)
+((move-through-entrance arthur hut hutexit townarch)-165, (move-through-doorway arthur townarch docks)-167)
+((initial)-322, (move-through-doorway arthur docks junkyard)-169)
+((move-through-doorway arthur docks junkyard)-169, (goal)-323)
+((move-through-doorway arthur townarch docks)-167, (move-through-doorway arthur docks junkyard)-169)
+((initial)-322, (give arthur tastycupcake alli junkyard)-171)
+((give arthur tastycupcake alli junkyard)-171, (goal)-323)
+((move-through-doorway arthur docks junkyard)-169, (give arthur tastycupcake alli junkyard)-171)
+((initial)-322, (donothing arthur)-173)
+((donothing arthur)-173, (goal)-323)
+((give arthur tastycupcake alli junkyard)-171, (donothing arthur)-173)
+((initial)-322, (give alli ash arthur junkyard)-175)
+((give alli ash arthur junkyard)-175, (goal)-323)
+((donothing arthur)-173, (give alli ash arthur junkyard)-175)
+((initial)-322, (move-through-doorway arthur junkyard docks)-177)
+((move-through-doorway arthur junkyard docks)-177, (goal)-323)
+((give alli ash arthur junkyard)-175, (move-through-doorway arthur junkyard docks)-177)
+((initial)-322, (move-through-doorway arthur docks townarch)-179)
+((move-through-doorway arthur docks townarch)-179, (goal)-323)
+((move-through-doorway arthur junkyard docks)-177, (move-through-doorway arthur docks townarch)-179)
+((initial)-322, (move-through-door arthur townarch towngate townsquare)-181)
+((move-through-door arthur townarch towngate townsquare)-181, (goal)-323)
+((move-through-doorway arthur docks townarch)-179, (move-through-door arthur townarch towngate townsquare)-181)
+((initial)-322, (move-through-doorway arthur townsquare valley)-183)
+((move-through-doorway arthur townsquare valley)-183, (goal)-323)
+((move-through-door arthur townarch towngate townsquare)-181, (move-through-doorway arthur townsquare valley)-183)
+((initial)-322, (talk-to arthur james valley)-185)
+((talk-to arthur james valley)-185, (goal)-323)
+((move-through-doorway arthur townsquare valley)-183, (talk-to arthur james valley)-185)
+((initial)-322, (give arthur humanskull james valley)-187)
+((give arthur humanskull james valley)-187, (goal)-323)
+((talk-to arthur james valley)-185, (give arthur humanskull james valley)-187)
+((initial)-322, (donothing arthur)-189)
+((donothing arthur)-189, (goal)-323)
+((give arthur humanskull james valley)-187, (donothing arthur)-189)
+((initial)-322, (move-through-doorway arthur valley townsquare)-191)
+((move-through-doorway arthur valley townsquare)-191, (goal)-323)
+((donothing arthur)-189, (move-through-doorway arthur valley townsquare)-191)
+((initial)-322, (move-through-doorway arthur townsquare cliff)-193)
+((move-through-doorway arthur townsquare cliff)-193, (goal)-323)
+((move-through-doorway arthur valley townsquare)-191, (move-through-doorway arthur townsquare cliff)-193)
+((initial)-322, (move-through-entrance arthur cliff mansionentrance mansion)-195)
+((move-through-entrance arthur cliff mansionentrance mansion)-195, (goal)-323)
+((move-through-doorway arthur townsquare cliff)-193, (move-through-entrance arthur cliff mansionentrance mansion)-195)
+((initial)-322, (pickup arthur candle mansion)-197)
+((pickup arthur candle mansion)-197, (goal)-323)
+((move-through-entrance arthur cliff mansionentrance mansion)-195, (pickup arthur candle mansion)-197)
+((initial)-322, (move-through-entrance arthur mansion mansionexit cliff)-199)
+((move-through-entrance arthur mansion mansionexit cliff)-199, (goal)-323)
+((pickup arthur candle mansion)-197, (move-through-entrance arthur mansion mansionexit cliff)-199)
+((initial)-322, (move-through-doorway arthur cliff townsquare)-201)
+((move-through-doorway arthur cliff townsquare)-201, (goal)-323)
+((move-through-entrance arthur mansion mansionexit cliff)-199, (move-through-doorway arthur cliff townsquare)-201)
+((initial)-322, (drop arthur mirror townsquare)-203)
+((drop arthur mirror townsquare)-203, (goal)-323)
+((move-through-doorway arthur cliff townsquare)-201, (drop arthur mirror townsquare)-203)
+((initial)-322, (drop arthur silver townsquare)-205)
+((drop arthur silver townsquare)-205, (goal)-323)
+((drop arthur mirror townsquare)-203, (drop arthur silver townsquare)-205)
+((initial)-322, (drop arthur mushroom townsquare)-207)
+((drop arthur mushroom townsquare)-207, (goal)-323)
+((drop arthur silver townsquare)-205, (drop arthur mushroom townsquare)-207)
+((initial)-322, (move-through-doorway arthur townsquare valley)-209)
+((move-through-doorway arthur townsquare valley)-209, (goal)-323)
+((drop arthur mushroom townsquare)-207, (move-through-doorway arthur townsquare valley)-209)
+((initial)-322, (give arthur candle james valley)-211)
+((give arthur candle james valley)-211, (goal)-323)
+((move-through-doorway arthur townsquare valley)-209, (give arthur candle james valley)-211)
+((initial)-322, (move-through-doorway arthur valley townsquare)-213)
+((move-through-doorway arthur valley townsquare)-213, (goal)-323)
+((give arthur candle james valley)-211, (move-through-doorway arthur valley townsquare)-213)
+((initial)-322, (talk-to arthur frank townsquare)-215)
+((talk-to arthur frank townsquare)-215, (goal)-323)
+((move-through-doorway arthur valley townsquare)-213, (talk-to arthur frank townsquare)-215)
+((initial)-322, (talk-to arthur dave townsquare)-217)
+((talk-to arthur dave townsquare)-217, (goal)-323)
+((talk-to arthur frank townsquare)-215, (talk-to arthur dave townsquare)-217)
+((initial)-322, (open arthur shopentrance townsquare)-219)
+((open arthur shopentrance townsquare)-219, (goal)-323)
+((talk-to arthur dave townsquare)-217, (open arthur shopentrance townsquare)-219)
+((initial)-322, (move-through-entrance arthur townsquare shopentrance shop)-221)
+((move-through-entrance arthur townsquare shopentrance shop)-221, (goal)-323)
+((open arthur shopentrance townsquare)-219, (move-through-entrance arthur townsquare shopentrance shop)-221)
+((initial)-322, (talk-to arthur giovanna shop)-223)
+((talk-to arthur giovanna shop)-223, (goal)-323)
+((move-through-entrance arthur townsquare shopentrance shop)-221, (talk-to arthur giovanna shop)-223)
+((initial)-322, (donothing arthur)-225)
+((donothing arthur)-225, (goal)-323)
+((talk-to arthur giovanna shop)-223, (donothing arthur)-225)
+((initial)-322, (pickup arthur knightshield shop)-227)
+((pickup arthur knightshield shop)-227, (goal)-323)
+((donothing arthur)-225, (pickup arthur knightshield shop)-227)
+((initial)-322, (move-through-entrance arthur shop shopexit townsquare)-229)
+((move-through-entrance arthur shop shopexit townsquare)-229, (goal)-323)
+((pickup arthur knightshield shop)-227, (move-through-entrance arthur shop shopexit townsquare)-229)
+((initial)-322, (move-through-door arthur townsquare towngate townarch)-231)
+((move-through-door arthur townsquare towngate townarch)-231, (goal)-323)
+((move-through-entrance arthur shop shopexit townsquare)-229, (move-through-door arthur townsquare towngate townarch)-231)
+((initial)-322, (move-through-entrance arthur townarch forgeentrance forge)-233)
+((move-through-entrance arthur townarch forgeentrance forge)-233, (goal)-323)
+((move-through-door arthur townsquare towngate townarch)-231, (move-through-entrance arthur townarch forgeentrance forge)-233)
+((initial)-322, (pickup arthur knightsword forge)-235)
+((pickup arthur knightsword forge)-235, (goal)-323)
+((move-through-entrance arthur townarch forgeentrance forge)-233, (pickup arthur knightsword forge)-235)
+((initial)-322, (move-through-entrance arthur forge forgeexit townarch)-237)
+((move-through-entrance arthur forge forgeexit townarch)-237, (goal)-323)
+((pickup arthur knightsword forge)-235, (move-through-entrance arthur forge forgeexit townarch)-237)
+((initial)-322, (move-through-entrance arthur townarch hutentrance hut)-239)
+((move-through-entrance arthur townarch hutentrance hut)-239, (goal)-323)
+((move-through-entrance arthur forge forgeexit townarch)-237, (move-through-entrance arthur townarch hutentrance hut)-239)
+((initial)-322, (pickup arthur hairtonic hut)-241)
+((pickup arthur hairtonic hut)-241, (goal)-323)
+((move-through-entrance arthur townarch hutentrance hut)-239, (pickup arthur hairtonic hut)-241)
+((initial)-322, (move-through-entrance arthur hut hutexit townarch)-243)
+((move-through-entrance arthur hut hutexit townarch)-243, (goal)-323)
+((pickup arthur hairtonic hut)-241, (move-through-entrance arthur hut hutexit townarch)-243)
+((initial)-322, (close arthur hutentrance townarch)-245)
+((close arthur hutentrance townarch)-245, (goal)-323)
+((move-through-entrance arthur hut hutexit townarch)-243, (close arthur hutentrance townarch)-245)
+((initial)-322, (move-through-door arthur townarch towngate townsquare)-247)
+((move-through-door arthur townarch towngate townsquare)-247, (goal)-323)
+((close arthur hutentrance townarch)-245, (move-through-door arthur townarch towngate townsquare)-247)
+((initial)-322, (move-through-entrance arthur townsquare shopentrance shop)-249)
+((move-through-entrance arthur townsquare shopentrance shop)-249, (goal)-323)
+((move-through-door arthur townarch towngate townsquare)-247, (move-through-entrance arthur townsquare shopentrance shop)-249)
+((initial)-322, (give arthur hairtonic giovanna shop)-251)
+((give arthur hairtonic giovanna shop)-251, (goal)-323)
+((move-through-entrance arthur townsquare shopentrance shop)-249, (give arthur hairtonic giovanna shop)-251)
+((initial)-322, (move-through-entrance arthur shop shopexit townsquare)-253)
+((move-through-entrance arthur shop shopexit townsquare)-253, (goal)-323)
+((give arthur hairtonic giovanna shop)-251, (move-through-entrance arthur shop shopexit townsquare)-253)
+((initial)-322, (move-through-doorway arthur townsquare valley)-255)
+((move-through-doorway arthur townsquare valley)-255, (goal)-323)
+((move-through-entrance arthur shop shopexit townsquare)-253, (move-through-doorway arthur townsquare valley)-255)
+((initial)-322, (move-through-entrance arthur valley fortentrance fort)-257)
+((move-through-entrance arthur valley fortentrance fort)-257, (goal)-323)
+((move-through-doorway arthur townsquare valley)-255, (move-through-entrance arthur valley fortentrance fort)-257)
+((initial)-322, (talk-to arthur ian fort)-259)
+((talk-to arthur ian fort)-259, (goal)-323)
+((move-through-entrance arthur valley fortentrance fort)-257, (talk-to arthur ian fort)-259)
+((initial)-322, (give arthur knightsword ian fort)-261)
+((give arthur knightsword ian fort)-261, (goal)-323)
+((talk-to arthur ian fort)-259, (give arthur knightsword ian fort)-261)
+((initial)-322, (give arthur knightshield ian fort)-263)
+((give arthur knightshield ian fort)-263, (goal)-323)
+((give arthur knightsword ian fort)-261, (give arthur knightshield ian fort)-263)
+((initial)-322, (move-through-entrance arthur fort fortexit valley)-265)
+((move-through-entrance arthur fort fortexit valley)-265, (goal)-323)
+((give arthur knightshield ian fort)-263, (move-through-entrance arthur fort fortexit valley)-265)
+((initial)-322, (move-through-doorway arthur valley townsquare)-267)
+((move-through-doorway arthur valley townsquare)-267, (goal)-323)
+((move-through-entrance arthur fort fortexit valley)-265, (move-through-doorway arthur valley townsquare)-267)
+((initial)-322, (move-through-entrance arthur townsquare bankentrance bank)-269)
+((move-through-entrance arthur townsquare bankentrance bank)-269, (goal)-323)
+((move-through-doorway arthur valley townsquare)-267, (move-through-entrance arthur townsquare bankentrance bank)-269)
+((initial)-322, (drop arthur bucket bank)-271)
+((drop arthur bucket bank)-271, (goal)-323)
+((move-through-entrance arthur townsquare bankentrance bank)-269, (drop arthur bucket bank)-271)
+((initial)-322, (move-through-entrance arthur bank bankexit townsquare)-273)
+((move-through-entrance arthur bank bankexit townsquare)-273, (goal)-323)
+((drop arthur bucket bank)-271, (move-through-entrance arthur bank bankexit townsquare)-273)
+((initial)-322, (move-through-door arthur townsquare towngate townarch)-275)
+((move-through-door arthur townsquare towngate townarch)-275, (goal)-323)
+((move-through-entrance arthur bank bankexit townsquare)-273, (move-through-door arthur townsquare towngate townarch)-275)
+((initial)-322, (move-through-entrance arthur townarch forgeentrance forge)-277)
+((move-through-entrance arthur townarch forgeentrance forge)-277, (goal)-323)
+((move-through-door arthur townsquare towngate townarch)-275, (move-through-entrance arthur townarch forgeentrance forge)-277)
+((initial)-322, (move-through-entrance arthur forge forgeexit townarch)-279)
+((move-through-entrance arthur forge forgeexit townarch)-279, (goal)-323)
+((move-through-entrance arthur townarch forgeentrance forge)-277, (move-through-entrance arthur forge forgeexit townarch)-279)
+((initial)-322, (move-through-doorway arthur townarch docks)-281)
+((move-through-doorway arthur townarch docks)-281, (goal)-323)
+((move-through-entrance arthur forge forgeexit townarch)-279, (move-through-doorway arthur townarch docks)-281)
+((initial)-322, (move-through-entrance arthur docks barentrance bar)-283)
+((move-through-entrance arthur docks barentrance bar)-283, (goal)-323)
+((move-through-doorway arthur townarch docks)-281, (move-through-entrance arthur docks barentrance bar)-283)
+((initial)-322, (move-through-entrance arthur bar barexit docks)-285)
+((move-through-entrance arthur bar barexit docks)-285, (goal)-323)
+((move-through-entrance arthur docks barentrance bar)-283, (move-through-entrance arthur bar barexit docks)-285)
+((initial)-322, (move-through-doorway arthur docks junkyard)-287)
+((move-through-doorway arthur docks junkyard)-287, (goal)-323)
+((move-through-entrance arthur bar barexit docks)-285, (move-through-doorway arthur docks junkyard)-287)
+((initial)-322, (talk-to arthur alli junkyard)-289)
+((talk-to arthur alli junkyard)-289, (goal)-323)
+((move-through-doorway arthur docks junkyard)-287, (talk-to arthur alli junkyard)-289)
+((initial)-322, (move-through-doorway arthur junkyard docks)-291)
+((move-through-doorway arthur junkyard docks)-291, (goal)-323)
+((talk-to arthur alli junkyard)-289, (move-through-doorway arthur junkyard docks)-291)
+((initial)-322, (move-through-doorway arthur docks townarch)-293)
+((move-through-doorway arthur docks townarch)-293, (goal)-323)
+((move-through-doorway arthur junkyard docks)-291, (move-through-doorway arthur docks townarch)-293)
+((initial)-322, (give arthur bouquet dorian townarch)-295)
+((give arthur bouquet dorian townarch)-295, (goal)-323)
+((move-through-doorway arthur docks townarch)-293, (give arthur bouquet dorian townarch)-295)
+((initial)-322, (donothing arthur)-297)
+((donothing arthur)-297, (goal)-323)
+((give arthur bouquet dorian townarch)-295, (donothing arthur)-297)
+((initial)-322, (give dorian lovecontract arthur townarch)-299)
+((give dorian lovecontract arthur townarch)-299, (goal)-323)
+((donothing arthur)-297, (give dorian lovecontract arthur townarch)-299)
+((initial)-322, (move-through-door arthur townarch towngate townsquare)-301)
+((move-through-door arthur townarch towngate townsquare)-301, (goal)-323)
+((give dorian lovecontract arthur townarch)-299, (move-through-door arthur townarch towngate townsquare)-301)
+((initial)-322, (move-through-doorway arthur townsquare cliff)-303)
+((move-through-doorway arthur townsquare cliff)-303, (goal)-323)
+((move-through-door arthur townarch towngate townsquare)-301, (move-through-doorway arthur townsquare cliff)-303)
+((initial)-322, (move-through-entrance arthur cliff mansionentrance mansion)-305)
+((move-through-entrance arthur cliff mansionentrance mansion)-305, (goal)-323)
+((move-through-doorway arthur townsquare cliff)-303, (move-through-entrance arthur cliff mansionentrance mansion)-305)
+((initial)-322, (give arthur lovecontract jordan mansion)-307)
+((give arthur lovecontract jordan mansion)-307, (goal)-323)
+((move-through-entrance arthur cliff mansionentrance mansion)-305, (give arthur lovecontract jordan mansion)-307)
+((initial)-322, (talk-to arthur jordan mansion)-309)
+((talk-to arthur jordan mansion)-309, (goal)-323)
+((give arthur lovecontract jordan mansion)-307, (talk-to arthur jordan mansion)-309)
+((initial)-322, (move-through-entrance arthur mansion mansionexit cliff)-311)
+((move-through-entrance arthur mansion mansionexit cliff)-311, (goal)-323)
+((talk-to arthur jordan mansion)-309, (move-through-entrance arthur mansion mansionexit cliff)-311)
+((initial)-322, (move-through-doorway arthur cliff townsquare)-313)
+((move-through-doorway arthur cliff townsquare)-313, (goal)-323)
+((move-through-entrance arthur mansion mansionexit cliff)-311, (move-through-doorway arthur cliff townsquare)-313)
+((initial)-322, (move-through-door arthur townsquare towngate townarch)-315)
+((move-through-door arthur townsquare towngate townarch)-315, (goal)-323)
+((move-through-doorway arthur cliff townsquare)-313, (move-through-door arthur townsquare towngate townarch)-315)
+((initial)-322, (move-through-doorway arthur townarch docks)-317)
+((move-through-doorway arthur townarch docks)-317, (goal)-323)
+((move-through-door arthur townsquare towngate townarch)-315, (move-through-doorway arthur townarch docks)-317)
+((initial)-322, (move-through-entrance arthur docks barentrance bar)-319)
+((move-through-entrance arthur docks barentrance bar)-319, (goal)-323)
+((move-through-doorway arthur townarch docks)-317, (move-through-entrance arthur docks barentrance bar)-319)
+((initial)-322, (talk-to arthur mel bar)-321)
+((talk-to arthur mel bar)-321, (goal)-323)
+((move-through-entrance arthur docks barentrance bar)-319, (talk-to arthur mel bar)-321)

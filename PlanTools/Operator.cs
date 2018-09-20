@@ -273,7 +273,7 @@ namespace BoltFreezer.PlanTools
         }
 
         // Updates the precondition and effect bindings based on the terms.
-        private void UpdateBindings()
+        public void UpdateBindings()
         {
             // Update precondition bindings.
             UpdatePreconditionBindings();
