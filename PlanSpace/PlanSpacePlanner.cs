@@ -163,17 +163,20 @@ namespace BoltFreezer.PlanSpace
             }
             if (!found)
             {
-                if (plan.Initial.InState(oc.precondition))
-                {
-                    var planClone = plan.Clone() as IPlan;
-                    planClone.Repair(oc, planClone.InitialStep);
-                    Insert(planClone);
+                var planClone = plan.Clone() as IPlan;
+                planClone.Repair(oc, planClone.InitialStep);
+                Insert(planClone);
+                //if (plan.Initial.InState(oc.precondition))
+                //{
+                //    var planClone = plan.Clone() as IPlan;
+                //    planClone.Repair(oc, planClone.InitialStep);
+                //    Insert(planClone);
 
-                }
-                else
-                {
-                    throw new System.Exception();
-                }
+                //}
+                //else
+                //{
+                //    throw new System.Exception();
+                //}
             }
 
             //// For each existing step, check if it is a candidate for repair
@@ -253,6 +256,12 @@ namespace BoltFreezer.PlanSpace
                 foreach (var ord in plan.Orderings.edges)
                 {
                     writer.WriteLine(ord.ToString());
+                }
+
+                writer.WriteLine("\nCausalLinks:\n");
+                foreach (var cl in plan.CausalLinks)
+                {
+                    writer.WriteLine(cl.ToString());
                 }
             }
         }

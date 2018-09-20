@@ -218,7 +218,7 @@
                                 (willing-to-give-item mel basementexitkey)
 
 
-        (at arthur storage)     (wants-item arthur ash)
+        (at arthur bar)     (wants-item arthur ash)
                                 (wants-item arthur shinykey)
                                 (wants-item arthur loveletter)
                                 (wants-item arthur lovecontract)

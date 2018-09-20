@@ -100,25 +100,25 @@ namespace TestVHPOP
                     !step.Name.Equals("look-at") &&
 
                     // ...are just for flavor
-                    //(!genericName.Equals("(give alli ash arthur junkyard)")) &&
-                    //(!genericName.Equals("(drop arthur ash fort)")) &&
-                    //(!genericName.Equals("(drop arthur ash junkyard)")) &&
+                    (!genericName.Equals("(give alli ash arthur junkyard)")) &&
+                    (!genericName.Equals("(drop arthur ash fort)")) &&
+                    (!genericName.Equals("(drop arthur ash junkyard)")) &&
 
                     // ...cannot be used directly by the player
                     !step.Name.Equals("donothing") &&
-                    !step.Name.Equals("win-the-game") 
+                    !step.Name.Equals("win-the-game") &&
 
                     // ...are part of the tutorial
-                    //!genericName.Equals("(pickup arthur basementbucket storage)") &&
-                    //!genericName.Equals("(drop arthur basementbucket storage)") &&
-                    //!genericName.Equals("(pickup arthur basementbucket storage)") &&
-                    //!genericName.Equals("(give arthur basementbucket mel storage)") &&
-                    //!genericName.Equals("(give mel basementexitkey arthur storage)") &&
-                    //!genericName.Equals("(move-through-doorway arthur storage basement)") &&
-                    //!genericName.Equals("(unlock-entrance arthur basementexitkey basementexit basement)") &&
-                    //!genericName.Equals("(open arthur basementexit basement)") &&
-                    //!genericName.Equals("(move-through-entrance arthur basement basementexit bar)") &&
-                    //!genericName.Equals("(close arthur basemententrance bar)")
+                    !genericName.Equals("(pickup arthur basementbucket storage)") &&
+                    !genericName.Equals("(drop arthur basementbucket storage)") &&
+                    !genericName.Equals("(pickup arthur basementbucket storage)") &&
+                    !genericName.Equals("(give arthur basementbucket mel storage)") &&
+                    !genericName.Equals("(give mel basementexitkey arthur storage)") &&
+                    !genericName.Equals("(move-through-doorway arthur storage basement)") &&
+                    !genericName.Equals("(unlock-entrance arthur basementexitkey basementexit basement)") &&
+                    !genericName.Equals("(open arthur basementexit basement)") &&
+                    !genericName.Equals("(move-through-entrance arthur basement basementexit bar)") &&
+                    !genericName.Equals("(close arthur basemententrance bar)")
                     )
                     {
                         newSteps.Add(step);
