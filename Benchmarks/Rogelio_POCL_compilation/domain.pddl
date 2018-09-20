@@ -61,13 +61,11 @@
         :parameters (?character - character ?entity - entity ?location - location)
         :precondition
             (and
-                (player ?character)
                 (at ?character ?location)
                 (at ?entity ?location)
             )
         :effect
             (and
-                (player ?character)
                 (at ?character ?location)
                 (at ?entity ?location)
             )
@@ -79,7 +77,6 @@
         :parameters (?character - character ?entrance - entrance ?location - location)
         :precondition
             (and
-                (player ?character)
                 (at ?character ?location)
                 (at ?entrance ?location)
                 (closed ?entrance)
@@ -97,7 +94,6 @@
         :parameters (?character - character ?entrance - entrance ?location - location)
         :precondition
             (and
-                (player ?character)
                 (at ?character ?location)
                 (at ?entrance ?location)
                 (not (closed ?entrance))
@@ -115,7 +111,6 @@
         :parameters (?character - character ?item - item ?location - location)
         :precondition
             (and
-                (player ?character)
                 (at ?character ?location)
                 (at ?item ?location)
             )
@@ -133,7 +128,6 @@
         :parameters (?character - character ?item - item ?location - location)
         :precondition
             (and
-                (player ?character)
                 (at ?character ?location)
                 (has ?character ?item)
                 (willing-to-give-item ?character ?item) ;; the player should be willing to give an item that is dropped
@@ -156,7 +150,6 @@
                 (has ?sender ?item)
                 (willing-to-give-item ?sender ?item)
                 (at ?receiver ?location)
-                (not (has ?receiver ?item))
                 (wants-item ?receiver ?item)
             )
         :effect
@@ -175,9 +168,7 @@
         :precondition
             (and
 				(not (= ?from ?to))
-                (player ?character)
                 (at ?character ?from)
-                (not (at ?character ?to))
                 (connected ?from ?to)
                 (doorway ?from ?to)
             )
@@ -195,9 +186,7 @@
         :precondition
             (and
 				(not (= ?from ?to))
-                (player ?character)
                 (at ?character ?from)
-                (not (at ?character ?to))
                 (connected ?from ?to)
                 (doorbetween ?door ?from ?to)
                 (not (locked ?door))
@@ -216,9 +205,7 @@
         :precondition
             (and
 				(not (= ?from ?to))
-                (player ?character)
                 (at ?character ?from)
-                (not (at ?character ?to))
                 (at ?entrance ?from)
                 (leadsto ?entrance ?to)
                 (not (closed ?entrance))
@@ -241,7 +228,6 @@
         :parameters (?character - character ?key - item ?door - door)
         :precondition
             (and
-                (player ?character)
                 (locked ?door)
                 (has ?character ?key)
                 (unlocks ?key ?door)
@@ -258,7 +244,6 @@
         :parameters (?character - character ?key - item ?entrance - entrance ?location - location)
         :precondition
             (and
-                (player ?character)
                 (locked ?entrance)
                 (has ?character ?key)
                 (unlocks ?key ?entrance)

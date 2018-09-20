@@ -141,43 +141,70 @@ namespace BoltFreezer.PlanSpace
         public void Reuse(IPlan plan, OpenCondition oc)
         {
             // If repaired by initial state
-            if (plan.Initial.InState(oc.precondition))
-            {
-                var planClone = plan.Clone() as IPlan;
-                planClone.Repair(oc, planClone.InitialStep);
-                Insert(planClone);
-                
-            }
+            
 
-            // For each existing step, check if it is a candidate for repair
-            foreach (var step in plan.Steps)
+            var index = plan.Steps.IndexOf(oc.step);
+            bool found = false;
+            for (int ind = index; ind >= 0; ind--)
             {
-                if (oc.step.ID == step.ID)
+                if (plan.Steps[ind].Effects.Contains(oc.precondition))
                 {
-                    continue;
-                }
-
-                if (step.Effects.Contains(oc.precondition)){
-
-                    // Before adding a repair, check if there is a path.
-                    if (plan.Orderings.IsPath(oc.step, step))
-                        continue;
-                    
                     // Create child plan-space node
                     var planClone = plan.Clone() as IPlan;
 
                     // Make repair, check if new causal link is threatened
-                    planClone.Repair(oc, step);
+                    planClone.Repair(oc, plan.Steps[ind]);
 
                     // Insert plan as child on search frontier
                     Insert(planClone);
+                    found = true;
+                    break;
                 }
             }
+            if (!found)
+            {
+                if (plan.Initial.InState(oc.precondition))
+                {
+                    var planClone = plan.Clone() as IPlan;
+                    planClone.Repair(oc, planClone.InitialStep);
+                    Insert(planClone);
+
+                }
+                else
+                {
+                    throw new System.Exception();
+                }
+            }
+
+            //// For each existing step, check if it is a candidate for repair
+            //foreach (var step in plan.Steps)
+            //{
+            //    if (oc.step.ID == step.ID)
+            //    {
+            //        continue;
+            //    }
+
+            //    if (step.Effects.Contains(oc.precondition)){
+
+            //        // Before adding a repair, check if there is a path.
+            //        if (plan.Orderings.IsPath(oc.step, step))
+            //            continue;
+                    
+            //        // Create child plan-space node
+            //        var planClone = plan.Clone() as IPlan;
+
+            //        // Make repair, check if new causal link is threatened
+            //        planClone.Repair(oc, step);
+
+            //        // Insert plan as child on search frontier
+            //        Insert(planClone);
+            //    }
+            //}
         }
 
         public void RepairThreat(IPlan plan, ThreatenedLinkFlaw tclf)
         {
-            
+            return;
             var cl = tclf.causallink;
             var threat = tclf.threatener;
 

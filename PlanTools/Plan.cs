@@ -205,10 +205,14 @@ namespace BoltFreezer.PlanTools
                 {
                     continue;
                 }
-                if (!CacheMaps.IsThreat(oc.precondition, step))
+                if (!step.Effects.Contains(oc.precondition.GetReversed()))
                 {
                     continue;
                 }
+                //if (!CacheMaps.IsThreat(oc.precondition, step))
+            //    {
+             //       continue;
+            //    }
                 // step is a threat to need precondition
                 if (Orderings.IsPath(needStep, step))
                 {

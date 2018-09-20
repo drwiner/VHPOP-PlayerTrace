@@ -131,6 +131,7 @@ namespace TestVHPOP
             var initPlan = PlanSpacePlanner.CreateInitialPlan(problem);
 
             var lastInsertedStep = initPlan.InitialStep;
+
             foreach(var step in PlanStepList)
             {
                 initPlan.Insert(step);
@@ -144,7 +145,7 @@ namespace TestVHPOP
             ////////////////////////////////////////////////
 
             // Time limit in milliseconds for search
-            var cutoff = 600000f;
+            var cutoff = 6000000f;
 
             // Number of plans to return
             var k = 1;
