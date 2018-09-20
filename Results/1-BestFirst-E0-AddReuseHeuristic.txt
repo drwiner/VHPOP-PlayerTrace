@@ -1,0 +1,7 @@
+problem	1
+selection	E0-AddReuseHeuristic
+search	BestFirst
+runtime	687
+opened	5784
+expanded	250
+primitives	3
